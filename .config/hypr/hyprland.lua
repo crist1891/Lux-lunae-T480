@@ -27,25 +27,25 @@ local function in_vm()
 end
 local vm = in_vm()
 
--- Real hardware: let Hyprland pick the scale (1080p stays 1.0, a 2560x1440 panel gets a fractional scale).
--- To pin it:  hl.monitor({ output = "eDP-1", mode = "preferred", position = "0x0", scale = 1.5 })
+-- Real hardware: scale 1.2 (a 1920x1080 panel becomes 1600x900 of workspace). VM: 1.
+-- Change the number below to taste; `hyprctl monitors` lists the output name if you want to pin one screen.
 hl.monitor({
     output   = "",
     mode     = "preferred",
     position = "auto",
-    scale    = vm and 1 or "auto",
+    scale    = vm and 1 or 1.2,
 })
 
 -- ── environment ──
 hl.env("XCURSOR_SIZE", "24")
 hl.env("QT_QPA_PLATFORM", "wayland")
+hl.env("XDG_MENU_PREFIX", "arch-")      -- lets Dolphin find the app list ("Open with ...")
 if vm then hl.env("WLR_NO_HARDWARE_CURSORS", "1") end   -- VM only; real GPUs keep the hardware cursor
 
--- ── autostart ──
+-- ── autostart (the shell, qs, is also the notification daemon — no mako) ──
 hl.on("hyprland.start", function()
     hl.exec_cmd(lux .. "/wallcycle.sh init")
     hl.exec_cmd("qs")                                   -- Quickshell: side panel + top bar
-    hl.exec_cmd("mako")
     hl.exec_cmd("hypridle")
     hl.exec_cmd("wl-paste --type text --watch cliphist store")
     hl.exec_cmd("wl-paste --type image --watch cliphist store")

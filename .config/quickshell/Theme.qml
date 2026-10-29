@@ -11,10 +11,14 @@ Singleton {
     readonly property color lgold:   "#bfb771"
     readonly property color moon:    "#e9e6c8"
     readonly property color red:     "#b5313a"
+    readonly property color tonal:   "#2a2616"     // tonal container (buttons, cards)
+    readonly property color tonalHi: "#3b3520"
+    readonly property color panel:   Qt.rgba(8/255, 7/255, 5/255, 0.95)   // pop-out panels
 
     readonly property string display: "Almendra"
     readonly property string mono:    "JetBrainsMono Nerd Font"
 
+    readonly property int topBarH: 46
     readonly property int line: 1          // every rule, frame and tick is this thick
     readonly property int slideMs: 210
 }

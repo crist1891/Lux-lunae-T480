@@ -12,3 +12,19 @@ SideBar SideBar.qml
 TopBar TopBar.qml
 WsCell WsCell.qml
 CheatSheet CheatSheet.qml
+singleton Ui Ui.qml
+singleton Audio Audio.qml
+singleton Control Control.qml
+singleton Net Net.qml
+singleton Bt Bt.qml
+singleton Notifs Notifs.qml
+Icon Icon.qml
+RoundButton RoundButton.qml
+SegSlider SegSlider.qml
+Chip Chip.qml
+PopPanel PopPanel.qml
+NotifPanel NotifPanel.qml
+NotifToasts NotifToasts.qml
+NetPanel NetPanel.qml
+BtPanel BtPanel.qml
+QuickPanel QuickPanel.qml

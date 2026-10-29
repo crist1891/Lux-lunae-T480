@@ -1,0 +1,4 @@
+# Lux Lunae: let the shell drive the ThinkPad mute / mic-mute key LEDs.
+# The kernel's own audio trigger is switched off and the LED files become writable for the "video" group.
+SUBSYSTEM=="leds", KERNEL=="platform::mute",    ACTION=="add|change", ATTR{trigger}="none", RUN+="/bin/chgrp video /sys/class/leds/%k/brightness", RUN+="/bin/chmod 664 /sys/class/leds/%k/brightness"
+SUBSYSTEM=="leds", KERNEL=="platform::micmute", ACTION=="add|change", ATTR{trigger}="none", RUN+="/bin/chgrp video /sys/class/leds/%k/brightness", RUN+="/bin/chmod 664 /sys/class/leds/%k/brightness"

@@ -26,7 +26,7 @@
  },
  {
   "cat": "SHELL",
-  "label": "Dismiss notifications",
+  "label": "Clear notifications",
   "keys": "SUPER + N"
  },
  {

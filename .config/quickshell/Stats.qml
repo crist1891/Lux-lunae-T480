@@ -16,10 +16,16 @@ Singleton {
     property real rxKB: 0
     property real txKB: 0
     property string iface: "—"
+    property string ssid: ""
+    property int sigPct: 0
+    property bool btOn: false
+    property string btDev: ""
+    property int bat0: -1
+    property string bat0State: ""
+    property int bat1: -1
+    property string bat1State: ""
     property int bat: -1
     property string batState: ""
-    property int vol: 0
-    property bool muted: false
     property string media: ""
 
     Process {
@@ -41,8 +47,14 @@ Singleton {
                     root.iface = d.iface
                     root.bat = d.bat
                     root.batState = d.batState
-                    root.vol = d.vol
-                    root.muted = d.muted
+                    root.ssid = d.ssid
+                    root.sigPct = d.sigPct
+                    root.btOn = d.btOn
+                    root.btDev = d.btDev
+                    root.bat0 = d.bat0
+                    root.bat0State = d.bat0State
+                    root.bat1 = d.bat1
+                    root.bat1State = d.bat1State
                     root.media = d.media
                 } catch (e) {}
             }

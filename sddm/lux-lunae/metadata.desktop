@@ -1,0 +1,15 @@
+[SddmGreeterTheme]
+Name=Lux Lunae
+Description=Lux Lunae — Fiat Lux!  (MFD-style login screen)
+Author=lux-lunae-rice
+Copyright=
+License=
+Type=sddm-theme
+Version=1.0
+Website=
+Screenshot=
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-Id=lux-lunae
+Theme-API=2.0
+QTVersion=6

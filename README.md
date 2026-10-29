@@ -30,6 +30,16 @@ config as `*.bak-lux-<timestamp>`, copies the new one into `~/.config`, and adds
 
 Check what it would do without changing anything: `LUX_DRY_RUN=1 bash install.sh`
 
+## What's in it
+
+- **Side panel** (empty workspace): clock, workspaces, CPU/RAM/disk, Wi-Fi and Bluetooth (click either for its panel),
+  BAT0 and BAT1 separately, a draggable volume bar, mic status, and four round buttons: keep-awake
+  (click = stay awake, double-click = also with the lid closed), power profile, KDE Connect, quick settings.
+- **Top bar** (when a window is open): clock, CPU temperature, volume and mic, battery, and a notification centre
+  (crosshair = none, number = unread). Click the emblem for the launcher, the name for KDE Connect.
+- The shell is also the **notification daemon** (no mako needed).
+- **SDDM** login screen in the same style.
+
 ## Keys
 
 `Super + /` opens the cheat sheet (generated live from your Hyprland binds).
@@ -41,6 +51,14 @@ Check what it would do without changing anything: `LUX_DRY_RUN=1 bash install.sh
 - `~/.config/hypr/hyprland.lua` and `keybinds.lua` — compositor and binds
 - `~/.config/quickshell/` — the panels (`Theme.qml` has the colors and slide speed)
 - `~/.config/lux/walls/` — drop any jpg/png/webp in here to add wallpapers
+
+## T480 / ThinkPad notes
+
+- The Fn-lock state is stored in the laptop firmware, not in Linux. If F1-F6 only act as media keys with Fn-lock on,
+  you can either keep it on (Fn + Esc) or set `media_on_plain_f_keys = true` in `~/.config/hypr/keybinds.lua`.
+- The mute / mic-mute key lights follow the real mute state through a udev rule the installer adds.
+- Set your timezone with `sudo timedatectl set-timezone Area/City` (or run the installer with `LUX_TZ=Area/City`).
+- The Wi-Fi network list needs NetworkManager; the Wi-Fi name in the side panel works with any network manager.
 
 ## Notes
 

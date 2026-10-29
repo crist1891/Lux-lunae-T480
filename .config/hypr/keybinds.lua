@@ -10,7 +10,7 @@ local lux  = HOME .. "/.config/lux"
 
 -- apps (these were globals from his variables file)
 local terminal       = "kitty"
-local fileManager    = "thunar"
+local fileManager    = "dolphin"
 local browser        = "firefox"
 local codeEditor     = "kitty -e nano"      -- swap for "code" if you install VS Code
 local officeSoftware = "libreoffice"
@@ -29,7 +29,7 @@ hl.bind("CTRL + ALT + Delete", hl.dsp.exec_cmd(lux .. "/powermenu.sh"), { descri
 hl.bind("CTRL + SUPER + R", hl.dsp.exec_cmd("pkill -x quickshell; sleep 0.3; qs"), { description = "Shell: Restart widgets" })
 hl.bind("CTRL + SUPER + T", hl.dsp.exec_cmd(lux .. "/wallcycle.sh next"), { description = "Shell: Change wallpaper" })
 hl.bind("CTRL + SUPER + ALT + T", hl.dsp.exec_cmd(lux .. "/wallcycle.sh random"), { description = "Shell: Random wallpaper" })
-hl.bind("SUPER + N", hl.dsp.exec_cmd("makoctl dismiss -a"), { description = "Shell: Dismiss notifications" })
+hl.bind("SUPER + N", hl.dsp.exec_cmd("qs ipc call notifs clear"), { description = "Shell: Clear notifications" })
 hl.bind("SUPER + R", hl.dsp.exec_cmd(launcher), { description = "App: Launcher (added)" })
 hl.bind("CTRL + SUPER + B", hl.dsp.exec_cmd(lux .. "/toggle-blur.sh"), { description = "Shell: Toggle blur (added)" })
 
@@ -39,6 +39,19 @@ hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO
     { locked = true, repeating = true })
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-"),
     { locked = true, repeating = true })
+
+-- ThinkPad: the Fn-lock state lives in the laptop firmware, not in Linux. Setting this to true makes the
+-- plain F1-F6 keys do mute / volume / mic / brightness whichever state Fn-lock is in
+-- (real F-keys then need Fn). Leave false if you use F-keys in apps.
+local media_on_plain_f_keys = false
+if media_on_plain_f_keys then
+    hl.bind("F1", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { locked = true })
+    hl.bind("F2", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-"), { locked = true, repeating = true })
+    hl.bind("F3", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+ -l 1.5"), { locked = true, repeating = true })
+    hl.bind("F4", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"), { locked = true })
+    hl.bind("F5", hl.dsp.exec_cmd("brightnessctl s 5%-"), { locked = true, repeating = true })
+    hl.bind("F6", hl.dsp.exec_cmd("brightnessctl s 5%+"), { locked = true, repeating = true })
+end
 
 --##! Utilities
 --# Screenshot, Record, OCR, Color picker, Clipboard history
