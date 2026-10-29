@@ -15,7 +15,7 @@
 set -euo pipefail
 
 # >>> edit this one line after you create the repo (or set LUX_REPO=user/repo when running) <<<
-REPO="${LUX_REPO:-YOUR-USER/lux-lunae-rice}"
+REPO="${LUX_REPO:-crist1891/Lux-lunae-T480}"
 BRANCH="${LUX_BRANCH:-main}"
 
 if [ "$(id -u)" -eq 0 ]; then
