@@ -1,0 +1,14 @@
+font=Almendra 12
+background-color=#050403ee
+text-color=#d8d3a0
+border-color=#988f46
+border-size=2
+border-radius=0
+padding=12
+margin=12
+default-timeout=6000
+width=340
+
+[urgency=high]
+border-color=#b5313a
+default-timeout=0

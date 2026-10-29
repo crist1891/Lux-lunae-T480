@@ -1,0 +1,14 @@
+singleton Theme Theme.qml
+singleton Time Time.qml
+singleton Stats Stats.qml
+singleton Desktop Desktop.qml
+Brackets Brackets.qml
+Gauge Gauge.qml
+MiniGauge MiniGauge.qml
+Rule Rule.qml
+SectionHead SectionHead.qml
+Segments Segments.qml
+SideBar SideBar.qml
+TopBar TopBar.qml
+WsCell WsCell.qml
+CheatSheet CheatSheet.qml

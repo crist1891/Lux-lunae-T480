@@ -1,0 +1,17 @@
+{
+  "logo": {
+    "type": "kitty-direct",
+    "source": "__HOME__/.config/lux/shadow22-emblem.png",
+    "height": 16,
+    "padding": { "right": 3, "top": 1 }
+  },
+  "display": { "separator": "  ", "color": { "keys": "yellow", "title": "red" } },
+  "modules": [
+    { "type": "custom", "format": "Lux Lunae — Fiat Lux!" },
+    "break",
+    "title", "separator",
+    "os", "host", "kernel", "uptime", "packages", "shell",
+    "wm", "terminal", "cpu", "gpu", "memory", "disk",
+    "break", "colors"
+  ]
+}

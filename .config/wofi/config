@@ -1,0 +1,9 @@
+show=drun
+prompt=Fiat Lux
+width=480
+height=380
+location=center
+allow_markup=true
+no_actions=true
+insensitive=true
+hide_scroll=true

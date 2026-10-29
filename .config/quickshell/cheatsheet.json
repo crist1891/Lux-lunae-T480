@@ -1,0 +1,307 @@
+[
+ {
+  "cat": "SHELL",
+  "label": "Toggle cheatsheet",
+  "keys": "SUPER + /"
+ },
+ {
+  "cat": "SESSION",
+  "label": "Power menu",
+  "keys": "CTRL + ALT + Delete"
+ },
+ {
+  "cat": "SHELL",
+  "label": "Restart widgets",
+  "keys": "CTRL + SUPER + R"
+ },
+ {
+  "cat": "SHELL",
+  "label": "Change wallpaper",
+  "keys": "CTRL + SUPER + T"
+ },
+ {
+  "cat": "SHELL",
+  "label": "Random wallpaper",
+  "keys": "CTRL + SUPER + ALT + T"
+ },
+ {
+  "cat": "SHELL",
+  "label": "Dismiss notifications",
+  "keys": "SUPER + N"
+ },
+ {
+  "cat": "APP",
+  "label": "Launcher (added)",
+  "keys": "SUPER + R"
+ },
+ {
+  "cat": "SHELL",
+  "label": "Toggle blur (added)",
+  "keys": "CTRL + SUPER + B"
+ },
+ {
+  "cat": "UTILITIES",
+  "label": "Clipboard history >> clipboard",
+  "keys": "SUPER + V"
+ },
+ {
+  "cat": "UTILITIES",
+  "label": "Screen snip",
+  "keys": "SUPER + SHIFT + S"
+ },
+ {
+  "cat": "UTILITIES",
+  "label": "Character recognition >> clipboard",
+  "keys": "SUPER + SHIFT + X"
+ },
+ {
+  "cat": "UTILITIES",
+  "label": "Pick color #RRGGBB >> clipboard",
+  "keys": "SUPER + SHIFT + C"
+ },
+ {
+  "cat": "UTILITIES",
+  "label": "Record region (no sound)",
+  "keys": "SUPER + SHIFT + R"
+ },
+ {
+  "cat": "UTILITIES",
+  "label": "Record screen (with sound)",
+  "keys": "SUPER + ALT + SHIFT + R"
+ },
+ {
+  "cat": "UTILITIES",
+  "label": "Screenshot >> clipboard",
+  "keys": "Print"
+ },
+ {
+  "cat": "UTILITIES",
+  "label": "Screenshot >> clipboard & file",
+  "keys": "CTRL + Print"
+ },
+ {
+  "cat": "SCREEN",
+  "label": "Zoom out",
+  "keys": "SUPER + -"
+ },
+ {
+  "cat": "SCREEN",
+  "label": "Zoom in",
+  "keys": "SUPER + ="
+ },
+ {
+  "cat": "MEDIA",
+  "label": "Next track",
+  "keys": "SUPER + SHIFT + N"
+ },
+ {
+  "cat": "MEDIA",
+  "label": "Previous track",
+  "keys": "SUPER + SHIFT + B"
+ },
+ {
+  "cat": "MEDIA",
+  "label": "Play/pause media",
+  "keys": "SUPER + SHIFT + P"
+ },
+ {
+  "cat": "MEDIA",
+  "label": "Toggle mute",
+  "keys": "SUPER + SHIFT + M"
+ },
+ {
+  "cat": "MEDIA",
+  "label": "Toggle mic",
+  "keys": "SUPER + ALT + M"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Move",
+  "keys": "SUPER + LMB"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Resize",
+  "keys": "SUPER + RMB"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Focus Left",
+  "keys": "SUPER + ←"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Focus Right",
+  "keys": "SUPER + →"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Focus Up",
+  "keys": "SUPER + ↑"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Focus Down",
+  "keys": "SUPER + ↓"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Move Left",
+  "keys": "SUPER + SHIFT + ←"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Move Right",
+  "keys": "SUPER + SHIFT + →"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Move Up",
+  "keys": "SUPER + SHIFT + ↑"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Move Down",
+  "keys": "SUPER + SHIFT + ↓"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Close",
+  "keys": "SUPER + Q"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Forcefully zap a window",
+  "keys": "SUPER + ALT + SHIFT + Q"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Toggle split (added)",
+  "keys": "SUPER + ALT + J"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Float/Tile",
+  "keys": "SUPER + ALT + Space"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Maximize",
+  "keys": "SUPER + D"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Fullscreen",
+  "keys": "SUPER + F"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Fullscreen spoof",
+  "keys": "SUPER + ALT + F"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Pin",
+  "keys": "SUPER + P"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Send to workspace 1–10",
+  "keys": "SUPER + ALT + 1…0"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Send to workspace left",
+  "keys": "SUPER + SHIFT + PgUp"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Send to workspace right",
+  "keys": "SUPER + SHIFT + PgDn"
+ },
+ {
+  "cat": "WINDOW",
+  "label": "Send to scratchpad",
+  "keys": "SUPER + ALT + S"
+ },
+ {
+  "cat": "WORKSPACE",
+  "label": "Focus 1–10",
+  "keys": "SUPER + 1…0"
+ },
+ {
+  "cat": "WORKSPACE",
+  "label": "Focus left",
+  "keys": "CTRL + SUPER + ←"
+ },
+ {
+  "cat": "WORKSPACE",
+  "label": "Focus right",
+  "keys": "CTRL + SUPER + →"
+ },
+ {
+  "cat": "WORKSPACE",
+  "label": "Toggle scratchpad",
+  "keys": "SUPER + S"
+ },
+ {
+  "cat": "SESSION",
+  "label": "Lock",
+  "keys": "SUPER + L"
+ },
+ {
+  "cat": "SESSION",
+  "label": "Sleep",
+  "keys": "SUPER + SHIFT + L"
+ },
+ {
+  "cat": "SESSION",
+  "label": "Shut down",
+  "keys": "CTRL + SUPER + ALT + SHIFT + Delete"
+ },
+ {
+  "cat": "APP",
+  "label": "Terminal",
+  "keys": "SUPER + Enter"
+ },
+ {
+  "cat": "APP",
+  "label": "File manager",
+  "keys": "SUPER + E"
+ },
+ {
+  "cat": "APP",
+  "label": "Browser",
+  "keys": "SUPER + W"
+ },
+ {
+  "cat": "APP",
+  "label": "Code editor",
+  "keys": "SUPER + C"
+ },
+ {
+  "cat": "APP",
+  "label": "Office software",
+  "keys": "CTRL + SUPER + ALT + SHIFT + W"
+ },
+ {
+  "cat": "APP",
+  "label": "Text editor",
+  "keys": "SUPER + X"
+ },
+ {
+  "cat": "APP",
+  "label": "Volume mixer",
+  "keys": "CTRL + SUPER + V"
+ },
+ {
+  "cat": "APP",
+  "label": "Settings (edit hyprland.lua)",
+  "keys": "SUPER + I"
+ },
+ {
+  "cat": "APP",
+  "label": "Task manager",
+  "keys": "CTRL + SHIFT + Esc"
+ }
+]

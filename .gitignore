@@ -1,0 +1,4 @@
+# nothing generated lives in this repo; keep editor/OS junk out
+.DS_Store
+*.swp
+*~
